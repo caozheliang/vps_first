@@ -1852,7 +1852,7 @@ phase_bonus_ssh_hello() {
     echo "  - 连接信息 (IP/登录时间/失败次数)"
     echo "  - 自定义 ASCII 艺术字 Banner"
     echo ""
-    echo -e "项目地址: ${CYAN}https://github.com/maodeyu180/ssh_hello${NC}"
+    echo -e "项目地址: ${CYAN}https://github.com/caozheliang/ssh_hello${NC}"
     echo ""
 
     if ! confirm "是否安装 SSH 登录信息美化脚本?"; then
@@ -1866,18 +1866,18 @@ phase_bonus_ssh_hello() {
 
     # 优先使用国内镜像
     if curl -o "$tmp_script" -sSL --max-time 10 \
-        "https://ghfast.top/https://raw.githubusercontent.com/maodeyu180/ssh_hello/main/ssh_info.sh" 2>/dev/null; then
+        "https://ghfast.top/https://raw.githubusercontent.com/caozheliang/ssh_hello/main/ssh_info.sh" 2>/dev/null; then
         success "下载完成 (国内镜像)"
     elif curl -o "$tmp_script" -sSL --max-time 15 \
-        "https://raw.githubusercontent.com/maodeyu180/ssh_hello/main/ssh_info.sh" 2>/dev/null; then
+        "https://raw.githubusercontent.com/caozheliang/ssh_hello/main/ssh_info.sh" 2>/dev/null; then
         success "下载完成 (GitHub)"
     elif wget -qO "$tmp_script" --timeout=15 \
-        "https://raw.githubusercontent.com/maodeyu180/ssh_hello/main/ssh_info.sh" 2>/dev/null; then
+        "https://raw.githubusercontent.com/caozheliang/ssh_hello/main/ssh_info.sh" 2>/dev/null; then
         success "下载完成 (wget)"
     else
         error "下载失败, 请稍后手动安装"
         echo -e "  手动安装命令:"
-        echo -e "  ${CYAN}curl -o ssh_info.sh -sSL https://raw.githubusercontent.com/maodeyu180/ssh_hello/main/ssh_info.sh && bash ssh_info.sh${NC}"
+        echo -e "  ${CYAN}curl -o ssh_info.sh -sSL https://raw.githubusercontent.com/caozheliang/ssh_hello/main/ssh_info.sh && bash ssh_info.sh${NC}"
         rm -f "$tmp_script"
         return 0
     fi
