@@ -44,20 +44,20 @@
 **海外服务器：**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/maodeyu180/vps_first/main/vps-init.sh -o vps-init.sh && bash vps-init.sh
+curl -fsSL https://raw.githubusercontent.com/caozheliang/vps_first/main/vps-init.sh -o vps-init.sh && bash vps-init.sh
 ```
 
 **国内服务器：**
 
 ```bash
-curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/maodeyu180/vps_first/main/vps-init.sh -o vps-init.sh && bash vps-init.sh
+curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/caozheliang/vps_first/main/vps-init.sh -o vps-init.sh && bash vps-init.sh
 ```
 
 ### 手动下载运行
 
 ```bash
 # 下载
-wget https://raw.githubusercontent.com/maodeyu180/vps_first/main/vps-init.sh
+wget https://raw.githubusercontent.com/caozheliang/vps_first/main/vps-init.sh
 
 # 添加执行权限
 chmod +x vps-init.sh
@@ -193,7 +193,7 @@ type %USERPROFILE%\.ssh\id_ed25519.pub
 
 ## 附加功能：SSH Hello
 
-脚本最后会询问是否安装 [ssh_hello](https://github.com/maodeyu180/ssh_hello) — 一个 SSH 登录信息美化脚本。
+脚本最后会询问是否安装 [ssh_hello](https://github.com/caozheliang/ssh_hello) — 一个 SSH 登录信息美化脚本。
 
 安装后每次 SSH 连接会自动显示：
 
@@ -231,7 +231,7 @@ fail2ban-client set sshd unbanip 你的IP
 
 ## 相关项目
 
-- [ssh_hello](https://github.com/maodeyu180/ssh_hello) — SSH 登录信息美化脚本
+- [ssh_hello](https://github.com/caozheliang/ssh_hello) — SSH 登录信息美化脚本
 
 ## License
 
